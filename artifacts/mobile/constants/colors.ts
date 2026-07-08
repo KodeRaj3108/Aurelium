@@ -1,0 +1,60 @@
+/**
+ * Aurelium design tokens — deep charcoal + silver + warm gold.
+ * Both light and dark themes are defined; useColors() auto-selects.
+ */
+
+const colors = {
+  light: {
+    text: '#16151A',
+    tint: '#8B6A38',
+    background: '#F7F6F3',
+    foreground: '#16151A',
+    card: '#FFFFFF',
+    cardForeground: '#16151A',
+    primary: '#8B6A38',
+    primaryForeground: '#FFFFFF',
+    secondary: '#EEECEA',
+    secondaryForeground: '#16151A',
+    muted: '#EEECEA',
+    mutedForeground: '#6A6A74',
+    accent: '#EEECEA',
+    accentForeground: '#16151A',
+    destructive: '#ef4444',
+    destructiveForeground: '#ffffff',
+    border: '#DDDBD4',
+    input: '#DDDBD4',
+    gold: '#8B6A38',
+    orbHighlight: '#FFFFFF',
+    headerBg: 'rgba(247, 246, 243, 0.88)',
+    sectionDivider: '#CFCCC4',
+    surfaceElevated: '#FFFFFF',
+  },
+  dark: {
+    text: '#EEEDE8',
+    tint: '#C8A46E',
+    background: '#09090B',
+    foreground: '#EEEDE8',
+    card: '#111115',
+    cardForeground: '#EEEDE8',
+    primary: '#C8A46E',
+    primaryForeground: '#09090B',
+    secondary: '#18181C',
+    secondaryForeground: '#EEEDE8',
+    muted: '#18181C',
+    mutedForeground: '#80808A',
+    accent: '#18181C',
+    accentForeground: '#EEEDE8',
+    destructive: '#ef4444',
+    destructiveForeground: '#ffffff',
+    border: '#232328',
+    input: '#232328',
+    gold: '#C8A46E',
+    orbHighlight: '#FFFFFF',
+    headerBg: 'rgba(9, 9, 11, 0.88)',
+    sectionDivider: '#2A2A32',
+    surfaceElevated: '#141418',
+  },
+  radius: 10,
+};
+
+export default colors;

@@ -1,0 +1,136 @@
+spark
+Untitled
+Build a premium, scroll-driven landing page for a modern high-end digital product. The experience should feel cinematic, elegant, and technically refined — not template-like, not generic SaaS, and not “AI aesthetic.” The page must feature a glossy 3D object in the hero that responds to scroll and continues to evolve across sections with smooth WebGL-driven transitions.
+PROJECT TYPE
+Informational landing page
+Single static HTML entry point with embedded CSS and JavaScript or clean separation if preferred
+Production-quality front-end only
+Use semantic HTML throughout
+CORE EXPERIENCE
+Create a scroll narrative with 5 sections:
+Hero
+Product value / positioning
+Feature storytelling
+Performance / trust / metrics
+CTA footer
+The glossy 3D object is the main visual anchor and should morph, rotate, refract light, or change material/shape subtly as the user scrolls.
+Use WebGL for the 3D object and section-to-section visual continuity.
+Scroll should feel smooth and physically coherent: nothing should randomly pop in or teleport.
+Transitions between sections must feel continuous, premium, and spatially connected.
+VISUAL DIRECTION
+Aesthetic: luxury tech, editorial minimalism, cinematic product reveal
+Avoid purple-blue startup gradients, glowing blobs, generic glassmorphism overload, icon-in-circle feature cards, and cookie-cutter 3-column SaaS layouts
+Use a restrained palette: mostly refined neutrals with one accent color only
+Strong typography, clean spacing, sophisticated contrast, and generous whitespace
+Design should feel like a blend of Apple-style product focus, high-fashion editorial restraint, and modern immersive WebGL storytelling
+3D / WEBGL REQUIREMENTS
+Use Three.js or another performant WebGL library
+Create one premium glossy object:
+examples of acceptable direction: liquid-metal orb, polished chrome sculpture, translucent resin monolith, iridescent abstract capsule
+Material should feel tactile and premium:
+reflections
+soft specular highlights
+depth
+subtle distortion or refraction if feasible
+Object animation must be driven by scroll progress
+Map section progress to object state changes:
+hero: slow reveal and ambient rotation
+section 2: change scale/orientation
+section 3: more dramatic transformation or material shift
+section 4: refined stabilization with data-aligned motion
+final CTA: object resolves into a calm final pose
+Keep motion smooth and GPU-friendly
+SCROLL SYSTEM
+Build scroll-linked animation carefully
+For text and content reveals, animate opacity, clip-path, filter, scale, or blur only when appropriate
+Avoid scroll-triggered translateY reveals that create visual layout shift
+The layout space for all content should exist before animation begins
+Use requestAnimationFrame and normalized scroll progress for smooth rendering
+Include a reduced-motion fallback:
+disable complex object animation
+keep object mostly static
+reduce parallax and transition intensity
+LAYOUT REQUIREMENTS
+Sticky or fixed transparent header that becomes more solid/subtle on scroll
+One powerful hero moment with large headline and concise supporting copy
+Subsequent sections should alternate between text-led and visual-led composition
+Use asymmetry and editorial spacing, but maintain a strong underlying grid
+Avoid centering everything; left-align most body content
+Include one full-bleed or near-full-bleed visual moment
+Make the page responsive from mobile to large desktop
+TYPOGRAPHY
+Use a premium font pairing:
+distinctive display font for hero headings
+clean highly readable body font for UI and paragraphs
+Keep typography disciplined:
+one hero display size
+compact section headings
+body copy readable and not oversized
+Buttons and nav should remain visually quiet compared to the hero
+COLOR / THEMING
+Implement both light and dark mode
+Default to system preference with a manual toggle
+Keep the page mostly neutral in both themes
+Accent color should be used selectively for CTA, focus states, and a few highlights
+Ensure WCAG-friendly contrast
+CONTENT DIRECTION
+Write premium placeholder copy that sounds specific and high-end, not generic
+Avoid phrases like:
+“unlock the power of”
+“all-in-one solution”
+“empowering your journey”
+Headline should be sharp, minimal, and brandable
+Feature copy should feel editorial and product-focused
+COMPONENTS
+Header with logo, nav, theme toggle, CTA
+Hero with headline, subcopy, CTA group, WebGL canvas
+2 to 3 editorial feature/story sections
+One trust/performance section with stats or concise proof points
+Final CTA section with strong conversion focus
+Footer with minimal links
+INTERACTION DETAILS
+Use refined hover states only on interactive elements
+Hover transitions should use a smooth cubic-bezier curve
+Buttons should feel tactile with slight lift on hover and settle on active
+Keep non-interactive elements free of fake hover behavior
+Respect touch devices and avoid hover-only dependencies
+PERFORMANCE
+Optimize for smooth frame rate
+Keep render loop efficient
+Use device pixel ratio caps if needed
+Pause or reduce expensive effects when offscreen
+Lazy-load non-critical assets
+Defer non-essential scripts
+Ensure good mobile performance
+ACCESSIBILITY
+Semantic landmarks: header, nav, main, section, footer
+Keyboard-accessible nav and controls
+Visible focus states
+Theme toggle with aria-label
+Respect prefers-reduced-motion
+Maintain readable contrast in both light and dark themes
+IMPLEMENTATION NOTES
+Prefer:
+HTML + CSS + JS with Three.js
+or React if truly necessary, but keep output easy to run
+Use modern CSS with custom properties for tokens
+Create a design system feel with:
+fluid type scale
+spacing tokens
+surface tokens
+border radius tokens
+shadow tokens
+Use smooth section progression tied to scroll
+Build cleanly structured code and comment only where useful
+DELIVERABLE
+Return complete runnable code
+Include all HTML, CSS, and JS
+Ensure the page works immediately when opened
+No placeholders, no lorem ipsum, no unfinished sections
+Make it feel like a premium launch page for a real product
+OPTIONAL BRAND SEED
+Use this fictional brand direction unless I provide another:
+Brand name: Aurelium
+Tagline direction: Sculpt motion into meaning.
+Mood: precise, glossy, intelligent, quiet luxury. and ensure the typography is elegant with a deep charcoal and silver palette.
+Description: A luxury-forward digital experience brand where glossy 3D form, cinematic transitions, and refined storytelling define the entire product presence.

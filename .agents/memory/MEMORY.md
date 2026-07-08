@@ -1,0 +1,1 @@
+- [Cormorant Garamond font naming](cormorant-font-naming.md) — package exports as `CormorantGaramond_*` not `Cormorant_*`; always use full prefix in imports and fontFamily strings.
